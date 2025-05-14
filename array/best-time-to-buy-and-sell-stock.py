@@ -3,7 +3,7 @@ class Solution:
         left, right = 0, 1
         maxP = 0
 
-        while right < len(prices):
+        while right < len(prices)-1:
             print(left, right)
             if prices[right] < prices[left]:
                 left = right
